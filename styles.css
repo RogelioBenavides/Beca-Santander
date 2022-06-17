@@ -1,14 +1,14 @@
 body {
     background-color: #fffbf7;
-
 }
 
-h1{
+h1 {
     color: #025157;
     text-align: center;
+    font-family: 'Alegreya', serif;
 }
 
-p{
+p {
     color: #8b8b8bcc;
     font-family: Verdana;
     font-size: 20px;
@@ -21,16 +21,17 @@ button {
 
 li {
     display: inline;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.header{
+.header {
     margin: 40px 20px 0;
     font-size: 0;
+    font-family: sans-serif;
 }
 
-.header > *{
+.header > * {
     display: inline-block;
     font-size: 16px;
     line-height: 45px;
@@ -46,12 +47,13 @@ li {
     width: 15%;
 }
 
-.navbar{
+.navbar {
     width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
+
 
 .actions{
     width: 15%;
@@ -60,7 +62,26 @@ li {
     font-weight: 600;
 }
 
+.actions > * {
+    margin: 0 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
 .main {
     margin-top: 140px;
     text-align: center;
+}
+
+.actions button {
+    color: #ffffff;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
+}
+.link {
+    color: #67b54b;
 }

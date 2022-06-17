@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
     <!-- <style>
         h1 {
             color: #025157
@@ -14,29 +17,31 @@
 </head>
 <body>
     <header class = "header">
+        <!--Regresar a la página principal-->
         <a href = "index.html" class ="logo">
             <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Logo de Matcha">
         </a>
-        <!-- Menú-->
+        <!-- Menú -->
+        <nav class = "navbar">
+            <!-- Navegación, Acciones-->
+            <ul>
+                <li>Platform</li>
+                <li>Pricing</li>
+                <li>Customers</li>
+                <li>Resources</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <!-- Acciones -->
+        <div class ="actions">
+            <a href="login.html" class = "link">Sign in</a>
+            <button class = "button" type = "button"> Start free trial</button>
+        </div>
     </header>
-    <nav class = "navbar">
-        <!-- Navegación, Acciones-->
-        <ul>
-            <li>Platform</li>
-            <li>Pricing</li>
-            <li>Customers</li>
-            <li>Resources</li>
-            <li>About</li>
-        </ul>
-    </nav>
-    <div class ="actions">
-        <a href="login.html"><li>Sign in</li></a>
-        <button type = "button"> Start free trial</button>
-    </div>
     <section class = "main">
         <h1>Build your business</h1>
         <p>Instantly publish, drive more traffic, grow your email list</strong>, and see your blog's impact on sales</p>
-        <form action="">
+        <form>
             <input type="email">
             <button type = "submit">
                 Try it now &rarr;
@@ -48,7 +53,7 @@
         <p>
             <strong>No credit card</strong> required.
         </p>
-        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="Logo Capterra" height="100">
+        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="Logo Capterra">
     </section>
 </body>
 </html>
