@@ -154,3 +154,7 @@ iframe{
     display: flex;
     margin: auto;
 }
+.features{
+    display: grid;
+    grid-template-columns: 600 px 1fr;
+}
