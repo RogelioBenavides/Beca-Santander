@@ -47,4 +47,31 @@
         width: 180px;
         margin-bottom: 15px;
     }
+
+    .card {
+        .card-title{
+            color: $dark-grey-text;
+        }
+        .metadata{
+            .category{
+                color: $green;
+            }
+            .read-time{
+                color: $light-grey-text;
+            }
+        }
+        .card-text{
+            color: $dark-grey-text;
+        }
+        
+        .read-more{
+            text-decoration: underline;
+        }
+        .author{
+            & > img{
+                border-radius: 50%;
+                width: 40px;
+            }
+        }
+    }
 }

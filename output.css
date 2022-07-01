@@ -44,5 +44,24 @@ Fuentes
   width: 180px;
   margin-bottom: 15px;
 }
+.blog .card .card-title {
+  color: #4a4a4a;
+}
+.blog .card .metadata .category {
+  color: #67b54b;
+}
+.blog .card .metadata .read-time {
+  color: #979797;
+}
+.blog .card .card-text {
+  color: #4a4a4a;
+}
+.blog .card .read-more {
+  text-decoration: underline;
+}
+.blog .card .author > img {
+  border-radius: 50%;
+  width: 40px;
+}
 
 /*# sourceMappingURL=output.css.map */
