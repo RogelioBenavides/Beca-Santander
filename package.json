@@ -1,0 +1,22 @@
+{
+  "name": "beca-santander",
+  "version": "1.0.0",
+  "description": "Este es un repositorio con el proyecto de la página Matcha del curso de desarrollo web de BEDU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogelioBenavides/Beca-Santander.git"
+  },
+  "author": "Rogelio Benavides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogelioBenavides/Beca-Santander/issues"
+  },
+  "homepage": "https://github.com/RogelioBenavides/Beca-Santander#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

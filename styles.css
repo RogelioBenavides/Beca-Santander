@@ -2,9 +2,20 @@ body {
     background-color: #fffbf7;
 }
 
+#SignIn {
+    padding-right: 20px;
+}
+
 h1 {
+    font-size: 60px;
     color: #025157;
     text-align: center;
+    font-family: 'Alegreya', serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: #025157;
     font-family: 'Alegreya', serif;
 }
 
@@ -56,7 +67,7 @@ li {
 }
 
 .navbar {
-    width: 60%;
+    background-color: #fffbf7;
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -150,52 +161,286 @@ article>p {
     margin-top: 10px;
 }
 
-iframe{
+iframe {
     display: flex;
     margin: auto;
+
 }
-.features{
+
+.features {
+    padding: 50px;
     background-color: #025157;
     display: grid;
-    height: 800px;
+    height: 1000px;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
 }
-.features>article{
-    margin: 20px;
+
+.features>article {
+    margin: 30px;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.featuresContainer{
+.card-icon{
+    display: inline-block;
+}
+
+.cd-t{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn-g{
+    background-color: #025157;
+    width: 100%;
+}
+
+.featuresContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.greenLink{
+.greenLink {
     color: #67b54b;
 }
 
-.greenLink:link{
-    text-decoration: none;
-}
-.greenLink:visited{
-    text-decoration: none;
-}
-.greenLink:hover{
-    text-decoration: none;
-}
-.greenLink:active{
+.greenLink:link {
     text-decoration: none;
 }
 
-.tinyImage{
+.greenLink:visited {
+    text-decoration: none;
+}
+
+.greenLink:hover {
+    text-decoration: none;
+}
+
+.greenLink:active {
+    text-decoration: none;
+}
+
+.tinyImage {
     height: 100px;
 }
 
-.largeImage{
+.largeImage {
     height: 100%;
     float: right;
 }
+
+
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+  }
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+  
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  /* Cambiamos el alto m°nimo de la tarjeta, para que se vea bien en responsive */
+  .success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+  .success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute m†s adelante */
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+  }
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .card .card-body .results p {
+    margin: 0;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Aqui hacemos un c°rculo con CSS! Este se posicionar† en el margen superior de .card-body */
+  .success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Cada c°rculo tiene su propio color. Verifica quÇ significa este selector: .card-circle.everly */
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+  }
+  
+  /* Los c°rculos deben recibir la imagen y ajustarla al tama§o */
+  .success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
+    width: 100%;
+  }
+/** Dispositivos m√≥viles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+    /* .navbar,
+    .actions{
+        display: none;
+    } */
+    .h1 {
+        font-size: 40px;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .banner>img {
+        width: 100%;
+    }
+
+    .publicidad>form {
+        flex-direction: column;
+    }
+
+    .publicidad>form>div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publicidad>form>div>input {
+        width: 65%;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .publicidad {
+        margin-top: 10px;
+    }
+
+    .publicidad>h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr)/ 1fr;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+    }
+
+    .largeImage {
+        display: none;
+    }
+}
+
+/** Dispositivos peque√±os en vista landscape */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/**Dispositivos medianos (tablets)*/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** Dispositivos de escritorio **/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** Dispositivos extra grandes (Monitores grandes y televisiones) */
+@media (min-width: 1200px) {}
